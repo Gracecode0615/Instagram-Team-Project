@@ -1,3 +1,4 @@
+import "../styles/logo.scss";
 const Logo = () => {
     return (
         <div className="logoContainer">

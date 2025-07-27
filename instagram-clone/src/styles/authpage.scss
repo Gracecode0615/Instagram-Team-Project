@@ -4,5 +4,23 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
+}
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+   
+}   
+
+.authFooter{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+
 }

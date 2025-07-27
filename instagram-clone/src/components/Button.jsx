@@ -7,7 +7,7 @@ const Button = ({ bgc, bradius }) => {
         className="signin-signup"
         style={{ backgroundColor: bgc, borderRadius: bradius }}
       >
-        Button
+        Login
       </button>
     </div>
   );
