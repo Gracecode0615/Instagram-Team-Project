@@ -1,9 +1,12 @@
-import Button from "./components/Button";
+import InstagramAuth from "./pages/IstagramAuth";
+import "./styles/app.scss";
 
 function App() {
   return (
-    <div>
-      <Button bgc={"black"}/>
+    <div className="app">
+      <div>for header sectikoln</div>
+
+      <InstagramAuth/>
     
     </div>
   );

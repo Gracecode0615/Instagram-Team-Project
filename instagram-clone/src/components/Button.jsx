@@ -1,8 +1,12 @@
+import "../styles/button.scss";
 
-const Button = (bgc) => {
+const Button = ({ bgc, bradius }) => {
   return (
     <div>
-      <button style={{bgc}}>
+      <button
+        className="signin-signup"
+        style={{ backgroundColor: bgc, borderRadius: bradius }}
+      >
         Button
       </button>
     </div>
