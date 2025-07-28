@@ -2,15 +2,34 @@ import LoginField from "../components/LoginFields";
 import Logo from "../components/Logo";
 import "../styles/authpage.scss";
 import Footer from "../components/Footer";
+import NoAccount from "../components/NoAccount";
 
 const InstagramAuth = () => {
     return (
         <div className="authPage">
-            <Logo/>
+
+            <div className="authHeader">
+                <h1>for the header</h1>
+            </div>
+
+            <div className="authlogo">
+                <Logo/>
+            </div>
+            
 
             <div className="formContainer">
                <LoginField />
             </div>
+
+            <div className="authText">
+                <div className="orText"><span className="">OR</span></div> 
+            </div>
+
+            <div className="noAccount">
+                  <NoAccount signUpColor={"#3797EF"}/>
+            </div>
+
+           
 
             <div className="authFooter">
                  <Footer/>
