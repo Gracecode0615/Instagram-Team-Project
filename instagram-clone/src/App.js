@@ -1,6 +1,10 @@
+import InstagramAuth from "./pages/IstagramAuth";
+import "./styles/app.scss";
+
 function App() {
   return (
-    <div>
+    <div className="app">
+      <InstagramAuth/>
     
     </div>
   );
