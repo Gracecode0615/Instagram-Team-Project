@@ -7,6 +7,16 @@
     justify-content: center;
 }
 
+.authHeader {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    // border-bottom: 1px solid #dbdbdb;
+}
+
 .authlogo {
     width: 100%;
     display: flex;
@@ -50,7 +60,9 @@
 .noAccount{
     width: 100%;
     margin-top: 3rem;
-        
+    color: #8e8e8e;
+
+    
 }
 .authFooter{
     width: 100%;

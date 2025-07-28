@@ -3,13 +3,14 @@ import Logo from "../components/Logo";
 import "../styles/authpage.scss";
 import Footer from "../components/Footer";
 import NoAccount from "../components/NoAccount";
+import Header from "../components/Header";
 
 const InstagramAuth = () => {
     return (
         <div className="authPage">
 
             <div className="authHeader">
-                <h1>for the header</h1>
+                <Header/>
             </div>
 
             <div className="authlogo">
