@@ -1,4 +1,4 @@
-import '../styles/instagram-main.sass';
+import '../styles/instagram-main.scss';
 import Logo from '../components/Logo'
 import LoveIcon from "../components/love-icon";
 import MsgIcon from "../components/msg-icon";

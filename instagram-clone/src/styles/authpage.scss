@@ -1,0 +1,77 @@
+.authPage {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.authHeader {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    // border-bottom: 1px solid #dbdbdb;
+}
+
+.authlogo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // margin-top: 3rem;
+}
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+   
+}   
+
+.authText{
+    width: 100%;
+    margin-top: 30px;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: thin solid #dbdbdb;
+
+    .orText{
+        background-color: white;
+        padding: 0 20px;
+        color: #8e8e8e;
+        position: absolute;
+        
+
+    }
+  
+}
+
+.noAccount{
+    width: 100%;
+    margin-top: 3rem;
+    color: #8e8e8e;
+
+    
+}
+.authFooter{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: auto;
+    
+ 
+
+}
