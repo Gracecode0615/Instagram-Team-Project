@@ -9,7 +9,7 @@ function App() {
       <BrowserRouter>
         
         <Routes>
-          <Route path="/" element={<InstagramAuth/>} />
+          <Route path="/login" element={<InstagramAuth/>} />
           <Route path="/main" element={<InstagramMain/>} />
         </Routes>
       </BrowserRouter>
