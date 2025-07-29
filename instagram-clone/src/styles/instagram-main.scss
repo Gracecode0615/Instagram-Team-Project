@@ -80,89 +80,151 @@
                         flex-direction: column;
 
                         span:first-child {
-                        font-weight: 600;
-                        font-size: 14px;
-                        display: flex;
-                        align-items: center;
-                        gap: 4px;
+                            font-weight: 600;
+                            font-size: 14px;
+                            display: flex;
+                            align-items: center;
+                            gap: 4px;
 
-                        svg {
-                            margin-left: 2px;
+                            svg {
+                                margin-left: 2px;
+                            }
+                        }
+
+                        span:last-child {
+                            font-size: 12px;
+                            color: #8e8e8e;
                         }
                     }
+                }
 
-                    span:last-child {
-                    font-size: 12px;
-                    color: #8e8e8e;
+                .more-options {
+                    cursor: pointer;
+
+                    svg {
+                        fill: #262626;
                     }
                 }
             }
 
-        .more-options {
-        cursor: pointer;
+            .post-image-section {
+                position: relative;
 
-        svg {
-            fill: #262626;
+                img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                }
+
+                span {
+                position: absolute;
+                top: 8px;
+                right: 10px;
+                background: rgba(0, 0, 0, 0.4);
+                color: #fff;
+                font-size: 12px;
+                padding: 2px 6px;
+                border-radius: 12px;
+                }
+            }
+
+            .post-actions {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 14px;
+
+                .left-icons {
+                display: flex;
+                gap: 14px;
+
+                svg {
+                    cursor: pointer;
+                }
+                }
+
+                .scroll-dots {
+                display: flex;
+                gap: 5px;
+
+                .scroll-dot {
+                    width: 6px;
+                    height: 6px;
+                    background-color: #ccc;
+                    border-radius: 50%;
+                }
+
+                .scroll-dot.active {
+                    background-color: #3897F0;
+                }
+                }
+
+                .save-icon {
+                svg {
+                    cursor: pointer;
+                }
+                }
+            }
         }
+
+        .comment {
+  padding: 10px 16px;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 14px;
+  color: #262626;
+
+  > div {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+
+    span:first-child {
+      margin-right: 8px;
+
+      img {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+
+    span:last-child {
+      font-weight: 500;
     }
   }
 
-  .post-image-section {
-    position: relative;
-
-    img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-    }
+  p {
+    margin: 0;
+    line-height: 1.4;
 
     span {
-      position: absolute;
-      top: 8px;
-      right: 10px;
-      background: rgba(0, 0, 0, 0.4);
-      color: #fff;
-      font-size: 12px;
-      padding: 2px 6px;
-      border-radius: 12px;
+      font-weight: 600;
+      margin-right: 5px;
     }
   }
 
-  .post-actions {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 14px;
+  > span {
+    display: block;
+    color: #8e8e8e;
+    font-size: 13px;
+    margin: 5px 0;
+    cursor: pointer;
 
-    .left-icons {
-      display: flex;
-      gap: 14px;
-
-      svg {
-        cursor: pointer;
-      }
+    &:hover {
+      text-decoration: underline;
     }
+  }
 
-    .scroll-dots {
-      display: flex;
-      gap: 5px;
+  input {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #dbdbdb;
+    padding: 10px 0;
+    font-size: 14px;
 
-      .scroll-dot {
-        width: 6px;
-        height: 6px;
-        background-color: #ccc;
-        border-radius: 50%;
-      }
-
-      .scroll-dot.active {
-        background-color: #3897F0;
-      }
-    }
-
-    .save-icon {
-      svg {
-        cursor: pointer;
-      }
+    &:focus {
+      outline: none;
     }
   }
 }

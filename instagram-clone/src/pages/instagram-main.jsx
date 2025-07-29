@@ -6,6 +6,7 @@ import MsgIcon from "../components/msg-icon";
 import Stories from "../components/Stories";
 import ShareIcon from "../components/shareIcon";
 import SaveIcon from "../components/saveIcon";
+import FooterIcons from "../components/FooterIcons";
 
 import dp1 from '../assets/dp/dp1.png';
 import dp2 from '../assets/dp/dp2.png';
@@ -106,7 +107,7 @@ function InstagramMain() {
                     <div className='comment'>
                         <div>
                             <span>
-                                <img src="https://via.placeholder.com/150" alt="Post 1" />
+                                <img src={dp6} alt="Post 1" />
                             </span>
                             <span>Liked by craig_love and 44,686 others</span>
                         </div>
@@ -119,8 +120,9 @@ function InstagramMain() {
                         <input type="text" placeholder='Add a comment...' />
 
                     </div>
-
                 </div>
+
+
             </div>
         </>
     )
