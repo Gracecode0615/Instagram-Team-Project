@@ -1,0 +1,13 @@
+.instagram-footer-icons{
+    height: 50px;
+    width: 375px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.instagram-footer-icons div{
+    height: 100%;
+    width: 75px;
+    margin: 0 5px;
+}
