@@ -9,6 +9,7 @@
         justify-content: space-between;
         align-items: center;
         margin-top: 25px;
+        
 
         .head-icon{
             display: flex;
@@ -16,7 +17,7 @@
             justify-content: space-between;
             align-items: center;
             height: 44px;
-            width: 100%;
+            width: 375px;
             background-color: #fafafa;
             border-bottom: rgb(240, 232, 232) 1px solid;
             padding: 20px 10px;
@@ -40,28 +41,131 @@
             background-color: #000;
             color: #fff;
         }
-        .one{
-            height: 44px;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 10px;
-        }
-        .stories{
+        .stories-div{
+            width: 375px;
             height: 98px;
-            width: 100%;
             display: flex;
-            overflow-x: auto;
-            padding: 10px;
-            gap: 10px;
+            align-items: center;
+            padding: 25px 0;
+            border-bottom: rgb(240, 232, 232) 1px solid;
+            overflow: hidden;
         }
-        .content{
-            width: 100%;
-            height: 576px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
+        
+        .post-container {
+            background-color: #fff;
+            margin-bottom: 20px;
+            width: 375px;
+            border-bottom: rgb(240, 232, 232) 1px solid;
+            
+            .post-header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px 14px;
+
+                .user-info {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    img {
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+
+                    .user-details {
+                        display: flex;
+                        flex-direction: column;
+
+                        span:first-child {
+                        font-weight: 600;
+                        font-size: 14px;
+                        display: flex;
+                        align-items: center;
+                        gap: 4px;
+
+                        svg {
+                            margin-left: 2px;
+                        }
+                    }
+
+                    span:last-child {
+                    font-size: 12px;
+                    color: #8e8e8e;
+                    }
+                }
+            }
+
+        .more-options {
+        cursor: pointer;
+
+        svg {
+            fill: #262626;
         }
+    }
+  }
+
+  .post-image-section {
+    position: relative;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    span {
+      position: absolute;
+      top: 8px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.4);
+      color: #fff;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 12px;
+    }
+  }
+
+  .post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+
+    .left-icons {
+      display: flex;
+      gap: 14px;
+
+      svg {
+        cursor: pointer;
+      }
+    }
+
+    .scroll-dots {
+      display: flex;
+      gap: 5px;
+
+      .scroll-dot {
+        width: 6px;
+        height: 6px;
+        background-color: #ccc;
+        border-radius: 50%;
+      }
+
+      .scroll-dot.active {
+        background-color: #3897F0;
+      }
+    }
+
+    .save-icon {
+      svg {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
     }
 }

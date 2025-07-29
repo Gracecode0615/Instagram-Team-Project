@@ -1,16 +1,18 @@
+import '../styles/displayPics.scss';
 
-function DP() {
+function UserDP({ imgSrc, alt = '', borderColor = 'gray', size = 60 }) {
   return (
-    <div>
-      <div className="stories">
-            <div>
-                <img src="https://via.placeholder.com/150" alt="Post 1" />
-                <div className="live"></div>
-            </div>
-            <p>Your Story</p>
-        </div>
+    <div
+      className="dp-wrapper"
+      style={{
+        borderColor: borderColor,
+        width: size,
+        height: size
+      }}
+    >
+      <img src={imgSrc} alt={alt} className="dp-img" />
     </div>
   );
 }
 
-export default DP;
+export default UserDP;
