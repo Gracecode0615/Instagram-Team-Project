@@ -6,6 +6,8 @@ const Footer = () => {
       <div className="barline">
         <svg
           width="134"
+
+    
           height="5"
           viewBox="0 0 134 5"
           fill="none"
