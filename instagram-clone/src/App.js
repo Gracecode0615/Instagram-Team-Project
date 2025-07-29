@@ -7,8 +7,9 @@ function App() {
   return (
     <div className="app">
       <BrowserRouter>
-        <InstagramAuth/>
+        
         <Routes>
+          <Route path="/" element={<InstagramAuth/>} />
           <Route path="/main" element={<InstagramMain/>} />
         </Routes>
       </BrowserRouter>
