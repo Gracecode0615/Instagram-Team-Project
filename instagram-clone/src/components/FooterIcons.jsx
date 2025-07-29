@@ -1,9 +1,10 @@
 import Footer from "../components/Footer";
 import LoveIcon from "../components/love-icon";
+import dp1 from '../assets/dp/dp1.png';
 
 const  FooterIcon = () => {
     return ( 
-        <div>
+        <div className="footer-container">
             <div className="instagram-footer-icons">
                 <div>
                     <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,10 +28,11 @@ const  FooterIcon = () => {
                     <LoveIcon />
                 </div>
                 
-                <div><img src="https://via.placeholder.com/150" alt="Post 1" />
-e</div>
+                <div><img src={dp1} alt="Post 1" /></div>
             </div>
-            <Footer />
+            <div>
+                <Footer />
+            </div>
         </div>
      );
 }

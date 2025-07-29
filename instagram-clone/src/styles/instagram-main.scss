@@ -9,7 +9,7 @@
         justify-content: space-between;
         align-items: center;
         margin-top: 25px;
-        
+        overflow-y: auto;
 
         .head-icon{
             display: flex;
@@ -37,10 +37,6 @@
             }
         }
 
-        .dark-mode{
-            background-color: #000;
-            color: #fff;
-        }
         .stories-div{
             width: 375px;
             height: 98px;

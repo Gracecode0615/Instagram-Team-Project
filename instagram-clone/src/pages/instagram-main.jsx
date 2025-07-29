@@ -122,6 +122,7 @@ function InstagramMain() {
                     </div>
                 </div>
 
+                <FooterIcons />
 
             </div>
         </>

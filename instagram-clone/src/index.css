@@ -8,6 +8,9 @@ body {
   display: flex;
   justify-content: center;
   border: 1px solid #dbdbdb;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
