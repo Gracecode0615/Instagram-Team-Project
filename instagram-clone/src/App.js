@@ -8,15 +8,10 @@ import { BrowserRouter, Route, Routes, NavLink  } from 'react-router-dom';
 function App() {
   return (
     <div className="app">
-      <BrowserRouter>
-        
         <Routes>
           <Route path="/login" element={<InstagramAuth/>} />
           <Route path="/main" element={<InstagramMain/>} />
         </Routes>
-      </BrowserRouter>
-
-      
     </div>
   );
 }
