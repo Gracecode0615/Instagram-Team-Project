@@ -1,11 +1,50 @@
-.footer{
-    margin-top: 30px;
-    width: 100%;
-    height: auto;
-    // border: solid 1px #dbdbdb;
+// @media screen and (max-width: 700px) {
+.footer-container{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    margin-top: auto;
-    
+    height: 100px;       
 }
+.instagram-footer-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background-color: #fff;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  width: 375px;
+  z-index: 10;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 24px;
+      height: 24px;
+      fill: #262626;
+    }
+
+    img {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+}
+
+.footer{
+    margin-top: 30px;
+    width: 375px;
+    height: 50px;
+    border: solid 1px #dbdbdb;
+    display: flex;
+    align-items: last baseline;
+    justify-content: center;
+}
+//}
