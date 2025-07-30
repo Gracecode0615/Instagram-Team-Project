@@ -6,7 +6,7 @@ import NoAccount from "../components/NoAccount";
 import Header from "../components/Header";
 import DisplayPics from "../components/DisplayPics";
 
-const InstagramAuth = () => {
+const InstagramAuth1 = () => {
     return (
         <div className="authPage">
 
@@ -43,4 +43,4 @@ const InstagramAuth = () => {
     );
 }
  
-export default InstagramAuth;
+export default InstagramAuth1;
