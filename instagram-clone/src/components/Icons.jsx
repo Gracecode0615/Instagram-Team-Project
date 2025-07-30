@@ -1,20 +1,20 @@
-import { useState } from "react";
+// import { useState } from "react";
 import "../styles/icons.scss"
 import {Link} from "react-router"
 
 const Icons = () => {
 
-  const [activeIcons, setActiveIcons] = useState([false, false, false, false])
+  // const [activeIcons, setActiveIcons] = useState([false, false, false, false])
 
-  const clicks = (index)=>{
-    setActiveIcons((prevState) =>{
-      prevState.map((active, i) => (i === index ? !active:active))
-    })
-  }
+  // const clicks = (index)=>{
+  //   setActiveIcons((prevState) =>{
+  //     prevState.map((active, i) => (i === index ? !active:active))
+  //   })
+  // }
 
-  const iconColor = (isActive) => ({
-    fill: isActive ? 'black' : '#262626'
-  })
+  // const iconColor = (isActive) => ({
+  //   fill: isActive ? 'black' : '#262626'
+  // })
 
   return (
     <div className="icons">
@@ -73,7 +73,7 @@ const Icons = () => {
         </svg>
       </div>
 
-      <div onClick={() => clicks(1)}>
+      <div >
         <Link to="/likes">
         <svg
         
