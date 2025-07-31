@@ -1,0 +1,41 @@
+.igtv-page {
+  padding: 0;
+  background: #111;
+  min-height: 100vh;
+}
+
+.igtv-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  color: #fff;
+  font-size: 1.2em;
+  background: #111;
+
+  .back-btn, .search-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+}
+
+.igtv-title {
+  font-weight: bold;
+}
+
+.igtv-banner {
+  width: 100%;
+  height: 400px;
+  background: #333;
+//   margin-bottom: 8px;
+}
+
+.igtv-grid {
+  display: flex;
+  flex-wrap: wrap;
+//   gap: 4%;
+//   padding: 8px;
+}

@@ -1,9 +1,9 @@
 // import Icons from "./components/Icons";
-import IgLikes from "./pages/IgLikes";
 import InstagramAuth from "./pages/IstagramAuth";
 import InstagramMain from './pages/instagram-main.jsx'
+import IGTV from "./pages/IGTV";
 import "./styles/app.scss";
-import { BrowserRouter, Route, Routes, NavLink  } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
         <Routes>
           <Route path="/login" element={<InstagramAuth/>} />
           <Route path="/main" element={<InstagramMain/>} />
+          <Route path="/igtv" element={<IGTV/>} /> {/* IGTV route */}
         </Routes>
     </div>
   );
