@@ -1,5 +1,6 @@
 import LoginField from "../components/LoginFields";
 import Logo from "../components/Logo";
+import "../styles/logo.scss";
 import "../styles/authpage.scss";
 import Footer from "../components/Footer";
 import NoAccount from "../components/NoAccount";
@@ -14,7 +15,9 @@ const InstagramAuth = () => {
             </div>
 
             <div className="authlogo">
-                <Logo/>
+                <div className="logoContainer">
+                    <Logo/>
+                </div>
             </div>
             
 
