@@ -7,7 +7,7 @@ function Highlights({ stories }) {
       {stories.map((story, index) => (
         <div key={index} className="story-block">
           <div className="dp-container">
-            <UserDP imgSrc={story.media} borderColor={ 'light-gray' } />
+            <HighlightsMedia media={story.media} borderColor={ 'light-gray' } />
           </div>
           <p className="story-name">{story.name}</p>
         </div>

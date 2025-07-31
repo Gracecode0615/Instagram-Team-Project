@@ -1,10 +1,16 @@
-import Highlight from '../components/Highlight'
+import { useState, useEffect } from 'react';
+
+import '../styles/profile.scss';
+
+import Highlights from '../components/highlights'
 import ReelsIcon from '../components/ReelsIcon'
 import MentionsIcon from '../components/MentionsIcon'
 import SideNavIcon from '../components/SideNavIcon'
 import UserDP from '../components/DisplayPics'
 import Button from '../components/Button'
-import dp2 from '../assets/dp/dp2.png';
+import FooterIcons from "../components/FooterIcons";
+
+import dp1 from '../assets/dp/dp1.png';
 
  function Profile() {
     const [storyData, setStoryData] = useState([]);
@@ -12,11 +18,11 @@ import dp2 from '../assets/dp/dp2.png';
         useEffect(() => {
         // simulate fetching story data
             const data = [
-                { video: v1, name: 'New' },
-                { video: v1, name: 'Friends' },
-                { video: v1, name: 'Sport' },
-                { video: v3, name: 'Desgin' },
-                { video: v2, name: 'John' },
+                { video: 'v1', name: 'New' },
+                { video: 'v1', name: 'Friends' },
+                { video: 'v1', name: 'Sport' },
+                { video: 'v3', name: 'Desgin' },
+                { video: 'v2', name: 'John' },
             ];
             setStoryData(data);
         }, []);
@@ -47,7 +53,7 @@ import dp2 from '../assets/dp/dp2.png';
 
                 <div className="profile-info">
                     <div className='info1'>
-                        <div><UserDP imgSrc={dp2}/></div>
+                        <div><UserDP imgSrc={dp1}/></div>
                     
                         <div>
                             <span>54</span>
@@ -71,10 +77,10 @@ import dp2 from '../assets/dp/dp2.png';
                             Everything is designed.</p>
                     </div>
 
-                    <div><Button bgc={'transparent'} bradius={'1px solid #dbdbdb'}/></div>
+                    <div><Button bgc={"transparent"} border={"1.5px solid rgba(228, 223, 223, 1)"} text={"Edit Profile"} color={"#262626"} /></div>
 
                     <div className="highlights">
-                        <Highlight stories={storyData} />
+                        <Highlights stories={storyData} />
                     </div>
                 </div>
             </div>
@@ -88,7 +94,7 @@ import dp2 from '../assets/dp/dp2.png';
             <div className="profile-img-grid">
                 <div className="reels-img">
                 </div>
-                
+
                 <div className="mentions-img">
                 </div>
             </div>

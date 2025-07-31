@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
+
 import '../styles/instagram-main.scss';
 import Logo from '../components/Logo'
 import LoveIcon from "../components/love-icon";
