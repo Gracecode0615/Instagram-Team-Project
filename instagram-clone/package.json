@@ -10,11 +10,7 @@
     "axios": "^1.11.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-<<<<<<< HEAD
-    "react-router-dom": "^7.7.1",
-=======
     "react-router-dom": "^6.30.1",
->>>>>>> 022eceec84edc5fc677806de355cd0abf24ac6d0
     "react-scripts": "5.0.1",
     "sass": "^1.89.2",
     "scss": "^0.2.4",
