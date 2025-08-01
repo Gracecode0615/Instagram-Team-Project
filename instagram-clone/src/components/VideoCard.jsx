@@ -1,5 +1,5 @@
 import React from "react";
-import "./VideoCard.scss";
+import "../styles/VideoCard.scss";
 
 const VideoCard = ({ image, title, duration }) => (
   <div className="video-card">
