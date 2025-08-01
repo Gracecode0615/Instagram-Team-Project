@@ -20,7 +20,7 @@ const Icons = () => {
     <div className="icons">
 
       <div >
-        <Link to="/login">
+        <Link to="/main">
         <svg
           width="22"
           height="25"
