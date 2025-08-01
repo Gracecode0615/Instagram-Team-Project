@@ -11,7 +11,7 @@ const LoginField = () => {
 
                 <span>Forgot Password?</span>
 
-                <Button bgc={"#3797EF"} bradius={"5px"}/>
+                <Button bgc={"#3797EF"} border={"none"} text={"Login"} color={"#fff"} />
             </form>
             <FbLogin/>
         </div>

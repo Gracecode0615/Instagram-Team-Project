@@ -1,0 +1,102 @@
+.profile-container{
+        min-height: 100vh;
+        width: 100%;
+        max-width: 24rem;
+    .profile-wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #262626;
+        background-color: #fff;
+        padding: .4rem;
+
+        .profile-header{
+            display: flex;
+            flex-direction: column;
+            gap: 1.1rem;
+
+            .menu{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                div:nth-child(2){
+                    display: flex;
+                    align-items: center;
+                    gap: .3rem;
+                    font-weight: bold;
+                    font-size: 1rem;
+                }
+            }
+
+        .profile-info{
+            display: flex;
+            flex-direction: column;
+            gap: .8rem;
+
+            .info1{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                div:nth-child(1){
+                    flex-shrink: 0;
+                }
+                div:not(:first-child){
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    font-size: 1.1rem;
+                }
+                span:first-child{
+                    font-weight: bold;
+                }
+            }
+
+            .info2{
+                font-size: .98rem;
+                line-height: 1.4;
+                width: 70%;
+
+                p:first-child{
+                    font-weight: bold;
+                }
+                
+                .highlights{
+                    display: flex;
+                    gap: .7rem;
+                    overflow-x: auto;
+                    padding: .7rem 0;
+                    white-space: normal;
+                    word-wrap: break-word;
+                    word-break: break-word;
+                }
+            }
+        }
+    }
+
+    .profile-middle{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        border-top: 1px solid #dbdbdb;
+        border-bottom: 1px solid #dbdbdb;
+        padding: 10px 0;
+        margin: 10px 0;
+
+        .medias, .medias-mentions{
+            cursor: pointer;
+        }
+    }
+    .profile-img-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1px;
+        background-color: #eee;
+    
+        .reels-img, .mentions-img{
+            background-color: #f0f0f0;
+            aspect-ratio: 1 / 1;
+        }
+    }
+    }
+}
