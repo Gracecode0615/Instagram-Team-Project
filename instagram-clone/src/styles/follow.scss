@@ -1,0 +1,32 @@
+.follow-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.followers{
+  display: flex;
+  flex-direction: row;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.items{
+    flex: 1;
+}
+
+.items:active{
+    p{
+        text-decoration: underline;
+    }
+}
+.follow-request{
+    width: 100%;
+    text-align: left;
+    border: thin solid gray;
+    
+    p{
+        margin-left: 1rem;
+    }
+}
