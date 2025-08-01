@@ -1,149 +1,149 @@
-//@media screen and (max-width: 700px) {
+.wrapper-im{
+    width: 24rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.6rem;
+
     
-    .wrapper-im{
-        width: 375px;
-        height: 100vh;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 25px;
 
-        .scroll-container{
-            overflow-y: auto;
+    .scroll-container{
+        overflow-y: auto;
+        
+        .head-icon{
+            height: 3rem;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            background-color: #fafafa;
+            border-bottom: rgb(240, 232, 232) 1px solid;
+            padding-top: .8rem;
+            position: relative;
 
-            .head-icon{
+            .camera-icon{
                 display: flex;
-                flex-direction: row;
-                justify-content: space-between;
                 align-items: center;
-                height: 44px;
-                width: 375px;
-                background-color: #fafafa;
-                border-bottom: rgb(240, 232, 232) 1px solid;
-                padding: 20px 10px;
+            }
 
-                .icons-right{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    align-items: center;
-                    gap: 20px;
+            .icons-right{
+                display: flex;
+                align-items: center;
+                gap: .7rem;
+                position: relative;
+
+                .red-dot{
                     position: relative;
-                    .red-dot{
-                        position: relative;
-                        top: -14px;
-                        right: -25px;
-                    }
+                    top: -14px;
+                    right: -25px;
                 }
             }
+        }
 
-            .stories-div{
-                width: 375px;
-                height: 98px;
-                display: flex;
-                align-items: center;
-                padding: 25px 0;
-                border-bottom: rgb(240, 232, 232) 1px solid;
-                overflow: hidden;
-            }
+        .stories-div{
+            width: 100%;
+            height: 98px;
+            display: flex;
+            align-items: center;
+            padding-top: .8rem;
+            border-bottom: rgb(240, 232, 232) 1px solid;
+            overflow: hidden;
+        }
+        
+        .post-container {
+            background-color: #fff;
+            margin-bottom: .7rem;
+            width: 100%;
+            border-bottom: rgb(240, 232, 232) 1px solid;
             
-            .post-container {
-                background-color: #fff;
-                margin-bottom: 20px;
-                width: 375px;
-                border-bottom: rgb(240, 232, 232) 1px solid;
-                
-                .post-header {
+            .post-header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: .5rem .7rem;
+
+                .user-info {
                     display: flex;
                     align-items: center;
-                    justify-content: space-between;
-                    padding: 10px 14px;
-
-                    .user-info {
-                        display: flex;
-                        align-items: center;
-                        gap: 10px;
-
-                        img {
-                            width: 32px;
-                            height: 32px;
-                            border-radius: 50%;
-                            object-fit: cover;
-                        }
-
-                        .user-details {
-                            display: flex;
-                            flex-direction: column;
-
-                            span:first-child {
-                                font-weight: 600;
-                                font-size: 14px;
-                                display: flex;
-                                align-items: center;
-                                gap: 4px;
-
-                                svg {
-                                    margin-left: 2px;
-                                }
-                            }
-
-                            span:last-child {
-                                font-size: 12px;
-                                color: #8e8e8e;
-                            }
-                        }
-                    }
-
-                    .more-options {
-                        cursor: pointer;
-
-                        svg {
-                            fill: #262626;
-                        }
-                    }
-                }
-
-                .post-image-section {
-                    position: relative;
+                    gap: .5rem;
 
                     img {
+                        width: 2.2rem;
+                        height: 2.2rem;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+
+                    .user-details {
+                        display: flex;
+                        flex-direction: column;
+
+                        span:first-child {
+                            font-weight: 600;
+                            font-size: .8rem;
+                            display: flex;
+                            align-items: center;
+                            gap: .08rem;
+
+                            svg {
+                                margin-left: .3rem;
+                            }
+                        }
+
+                        span:last-child {
+                            font-size: .8rem;
+                            color: #8e8e8e;
+                        }
+                    }
+                }
+
+                .more-options {
+                    cursor: pointer;
+
+                    svg {
+                        fill: #262626;
+                    }
+                }
+            }
+
+            .post-image-section {
+                position: relative;
+
+                img {
                     width: 100%;
                     height: auto;
                     object-fit: cover;
-                    }
-
-                    span {
-                    position: absolute;
-                    top: 8px;
-                    right: 10px;
-                    background: rgba(0, 0, 0, 0.4);
-                    color: #fff;
-                    font-size: 12px;
-                    padding: 2px 6px;
-                    border-radius: 12px;
-                    }
                 }
 
-                .post-actions {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    padding: 10px 14px;
+                span {
+                    position: absolute;
+                    top: .5rem;
+                    right: .7rem;
+                    background: rgba(0, 0, 0, 0.6);
+                    color: #fff;
+                    font-size: .8rem;
+                    padding: .006rem .4rem;
+                    border-radius: .8rem;
+                }
+            }
 
-                    .left-icons {
+            .post-actions {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: .5rem .7rem;
+
+                .left-icons {
                     display: flex;
-                    gap: 14px;
+                    gap: .7rem;
 
                     svg {
                         cursor: pointer;
                     }
-                    }
+                }
 
-                    .scroll-dots {
+                .scroll-dots {
                     display: flex;
-                    gap: 5px;
+                    gap: .3rem;
 
                     .scroll-dot {
                         width: 6px;
@@ -155,77 +155,75 @@
                     .scroll-dot.active {
                         background-color: #3897F0;
                     }
-                    }
+                }
 
-                    .save-icon {
+                .save-icon {
                     svg {
                         cursor: pointer;
                     }
+                }
+            }
+        }
+
+        .comment {
+            padding: .1rem .6rem;
+            font-family: 'Helvetica', sans-serif;
+            font-size: .9rem;
+            color: #262626;
+
+            div {
+                margin-bottom: .3rem;
+                display: flex;
+                align-items: center;
+
+                span:first-child {
+                margin-right: .3rem;
+
+                    img {
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        border-radius: 50%;
+                        object-fit: cover;
                     }
+                }
+
+                span:last-child {
+                    font-weight: 500;
                 }
             }
 
-            .comment {
-    padding: 10px 16px;
-    font-family: 'Helvetica', sans-serif;
-    font-size: 14px;
-    color: #262626;
+            p {
+                margin: 0;
+                line-height: 1.4;
 
-    div {
-        margin-bottom: 8px;
-        display: flex;
-        align-items: center;
+                span {
+                    font-weight: 600;
+                    margin-right: 5px;
+                }
+            }
 
-        span:first-child {
-        margin-right: 8px;
+            bold {
+                color: #303030;
+                font-size: .9rem;
+                font-weight: 700;
+                margin: 5px 0;
+                cursor: pointer;
 
-        img {
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-        }
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
 
-        span:last-child {
-        font-weight: 500;
-        }
-    }
+            input {
+                width: 100%;
+                border: none;
+                padding: 10px 0;
+                font-size: .9rem;
 
-    p {
-        margin: 0;
-        line-height: 1.4;
-
-        span {
-        font-weight: 600;
-        margin-right: 5px;
+                &:focus {
+                    outline: none;
+                }
+            }
         }
     }
-
-    span {
-        display: block;
-        color: #8e8e8e;
-        font-size: 13px;
-        margin: 5px 0;
-        cursor: pointer;
-
-        &:hover {
-        text-decoration: underline;
-        }
-    }
-
-    input {
-        width: 100%;
-        border: none;
-        border-top: 1px solid #dbdbdb;
-        padding: 10px 0;
-        font-size: 14px;
-
-        &:focus {
-        outline: none;
-        }
-    }
-    }
-    }
-    }
-//}
+}

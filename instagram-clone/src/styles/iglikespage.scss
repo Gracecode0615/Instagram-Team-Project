@@ -3,6 +3,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
 }
 .follow-area{
     width: 100%;
@@ -32,4 +33,8 @@
     border: solid thin #dbdbdb;
     padding-top: 1rem;
     padding-bottom: 5px;
+    // position: fixed;
+    
+   
+
 }

@@ -1,6 +1,6 @@
 import '../styles/displayPics.scss';
 
-function UserDP({ imgSrc, alt = '', borderColor = 'lightgray', size = 60 }) {
+function HighlightsMedia({ media, alt = '', borderColor = 'gray', size = 60 }) {
   return (
     <div
       className="dp-wrapper"
@@ -10,9 +10,9 @@ function UserDP({ imgSrc, alt = '', borderColor = 'lightgray', size = 60 }) {
         height: size
       }}
     >
-      <img src={imgSrc} alt={alt} className="dp-img" />
+      <video src={media} alt={alt} className="dp-img" />
     </div>
   );
 }
 
-export default UserDP;
+export default HighlightsMedia;

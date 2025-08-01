@@ -21,10 +21,10 @@ const IgLikes = () => {
                 <NewLikes />
             </div>
             
-            <div className="today-likes">display today likes</div>
+            {/* <div className="today-likes">display today likes</div>
             <div className="week-likes">display likesthis weelk</div>
             <div className="month-likes">this month like</div>
-           
+            */}
 
 
             <div className="foot-area">
