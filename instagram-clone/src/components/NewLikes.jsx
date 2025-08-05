@@ -37,13 +37,13 @@ const NewLikes = () => {
         <Liking profilePics={op} username={"craig_love"} photo={ph} hgt={44} rad={50} />
         <Follow profilePics={sp} username={"Keiro_d, ZackJohn and 26 others "} btn={"Message"} brad={5} pad={5} />
         <Follow profilePics={zp} username={"maxjacobson"} btn={"Message"} brad={5} pad={5} />
-        <Follow profilePics={lp} username={"maxjacobson"} btn={"Message"} brad={5} pad={5} bgc={"#3797EF"}  bdr={"thin"}/>
+        <Follow profilePics={lp} username={"maxjacobson"} btn={"Message"} brad={5} pad={5} bgc={"#3797EF"} txt={"#FFFFFF"} bdr={"thin"}/>
         
       </div>
 
       <div className="likes-containers">
         <p className="new-pas">This Month</p>
-        <Follow profilePics={lp} username={"maxjacobson"} btn={"Message"} brad={5} pad={5} bgc={"#3797EF"}  bdr={"thin"}/>
+        <Follow profilePics={lp} username={"maxjacobson"} btn={"Message"} brad={5} pad={5} bgc={"#3797EF"}  bdr={"thin"} txt={"#FFFFFF"}/>
         
       </div>
     </div>
