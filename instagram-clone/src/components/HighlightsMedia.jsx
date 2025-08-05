@@ -10,7 +10,7 @@ function HighlightsMedia({ media, alt = '', borderColor = 'gray', size = 60 }) {
         height: size
       }}
     >
-      <video src={media} alt={alt} className="dp-img" />
+      <img src={media} alt={alt} className="dp-img" />
     </div>
   );
 }
