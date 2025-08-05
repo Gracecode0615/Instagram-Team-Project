@@ -1,6 +1,6 @@
 import "../styles/liking.scss"
 
-const Liking = ({profilePics, username, photo, hgt, wth, rad, btn}) => {
+const Follow = ({profilePics, username, btn, wth, hgt, rad, bhgt, bwth, bgc, brad, pad}) => {
     return (
         <div className="liking">
             
@@ -9,20 +9,16 @@ const Liking = ({profilePics, username, photo, hgt, wth, rad, btn}) => {
             </div>
 
             <div className="username"> 
-               <p> <span className="uname">{username}</span> liked your photo</p>
+               <p> <span className="uname">{username}</span> started following you.</p>
             </div>
 
              <div className="photo"> 
-                <img className="dp" src={photo} alt="" />
+                <button className="btn" style={{width:bwth, height:bhgt, borderRadius:brad, backgroundColor:bgc, padding:pad}}>{btn}</button>
             </div>
 
         </div>
+       
     );
 }
-
  
-export default Liking;
-
-
-
-
+export default Follow;
