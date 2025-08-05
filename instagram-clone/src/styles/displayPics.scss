@@ -1,5 +1,6 @@
 
 .dp-wrapper {
+  position: relative;
   border-radius: 50%;
   padding: 2px;
   background-color: white;
@@ -7,6 +8,8 @@
   height: 62px;
   overflow: hidden;
   border: 3px solid;
+  margin-left:auto ;
+  margin-right:auto ;
 
   img {
     width: 100%;

@@ -37,7 +37,7 @@ const InstagramAuth1 = () => {
             
             </div>
 
-           
+       
 
             <div className="authFooter">
                  <Footer/>

@@ -6,6 +6,13 @@
     align-items: center;
     justify-content: center;
 }
+.live{
+    background: #000;
+}
+.SearchPage{
+    position: relative;
+    text-align: center;
+}
 
 .authPage1 {
     position:relative;
@@ -38,14 +45,19 @@
 
 .authlogo {
     width: 100%;
-    // text-align: center;
-    display: flex;
+    text-align: center;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     justify-items: center;
-    flex-direction: column;
+    // flex-direction: column;
     // align-items: center;
     // // margin-top: 3rem;
+
+    img{
+        height: auto;
+        max-width: auto;
+    }
 }
 
 .formContainer {

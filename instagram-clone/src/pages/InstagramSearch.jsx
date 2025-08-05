@@ -1,17 +1,38 @@
-import Logo from "../components/Logo";
-import "../styles/authpage.scss";
+// import Logo from "../components/Logo";
 import Footer from "../components/Footer";
-import Button from "../components/Button";
-import NoAccount from "../components/NoAccount";
+// import Button from "../components/Button";
 import Header from "../components/Header";
-import DisplayPics from "../components/DisplayPics";
-import dp from "../assets/dp/dp1.png"
+import Search from "../components/Search";
+import CatergoryTab from "../components/CatergoryTab";
+import GalleryGrid from "../components/GalleryGrid";
+import FooterIcon from "../components/FooterIcons";
+import '../styles/authpage.scss'
+
 
 const InstagramSearch = () => {
   return (
-     <div className="authHeader">
+   <div className="SearchPage">
+      <div className="authHeader">
           <Header/>
       </div>
+
+      <div className="searchInput">
+          <Search/>
+      </div>
+
+       <div className="catergory">
+          <CatergoryTab/>
+      </div>
+
+        <div className="gallery">
+          <GalleryGrid/>
+      </div>
+
+      <FooterIcon />
+    
+
+   </div>
+   
   )
 }
 
