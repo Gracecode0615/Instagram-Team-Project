@@ -43,6 +43,8 @@ const NewLikes = () => {
 
       <div className="likes-containers">
         <p className="new-pas">This Month</p>
+        <Follow profilePics={lp} username={"maxjacobson"} btn={"Message"} brad={5} pad={5} bgc={"#3797EF"}  bdr={"thin"}/>
+        
       </div>
     </div>
   );
