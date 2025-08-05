@@ -9,7 +9,6 @@ import op from "../assets/like_img/Oval.png"
 import sp from "../assets/like_img/2.png"
 import zp from "../assets/like_img/3.png"
 import lp from "../assets/like_img/4.png"
-import Button from "./Button";
 import Follow from "./Follow";
 
 
