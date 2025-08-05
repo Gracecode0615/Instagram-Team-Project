@@ -4,6 +4,12 @@ import Liking from "./Liking";
 //imports to images
 import dp from "../assets/like_img/dd.png"
 import ph from "../assets/like_img/1.png"
+import gp from "../assets/like_img/Profiles.png"
+import op from "../assets/like_img/Oval.png"
+import sp from "../assets/like_img/2.png"
+import zp from "../assets/like_img/3.png"
+import lp from "../assets/like_img/4.png"
+import Follow from "./Follow";
 
 
 
@@ -22,20 +28,17 @@ const NewLikes = () => {
 
       <div className="likes-containers">
         <p className="new-pas">Today</p>
-          <Liking profilePics={dp} username={"Karennne"} photo={ph} hgt={44} rad={50} />
+          <Liking profilePics={gp} username={"Karennne"} photo={ph} hgt={44} rad={50} />
       
       </div>
 
       <div className="likes-containers">
         <p className="new-pas">This Week</p>
-        <Liking profilePics={dp} username={"Karennne"} photo={ph} hgt={44} rad={50} />
-        <Liking profilePics={dp} username={"Karennne"} photo={ph} hgt={44} rad={50} />
-        <Liking profilePics={dp} username={"Karennne"} photo={ph} hgt={44} rad={50} />
-        <Liking profilePics={dp} username={"Karennne"} photo={ph} hgt={44} rad={50} />
-      
-      
+        <Liking profilePics={op} username={"craig_love"} photo={ph} hgt={44} rad={50} />
+        <Follow profilePics={sp} username={"Keiro_d, ZackJohn and 26 others "} btn={"Message"} brad={5} pad={5} />
+        <Follow profilePics={zp} username={"maxjacobson"} btn={"Message"} brad={5} pad={5} />
+        <Follow profilePics={lp} username={"maxjacobson"} btn={"Message"} brad={5} pad={5} bgc={"#3797EF"}  bdr={"thin"}/>
         
-      
       </div>
 
       <div className="likes-containers">

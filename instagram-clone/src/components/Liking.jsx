@@ -1,13 +1,9 @@
 import "../styles/liking.scss"
 
-const Liking = ({profilePics, username, photo, hgt, wth, rad}) => {
+const Liking = ({profilePics, username, photo, hgt, wth, rad, btn}) => {
     return (
-        
-
-
         <div className="liking">
             
-
             <div className="profile-pic">
                 <img className="dp" src={profilePics} alt="" style={{width:wth, height:hgt, borderRadius:rad}}/> 
             </div>
@@ -19,8 +15,6 @@ const Liking = ({profilePics, username, photo, hgt, wth, rad}) => {
              <div className="photo"> 
                 <img className="dp" src={photo} alt="" />
             </div>
-
-
 
         </div>
     );
