@@ -1,7 +1,15 @@
 .gallery{
   position: relative;
+  display: flex;
+  justify-content: center;
+  // padding:0 10px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3,1fr);
   margin-bottom: 40px;
+}
+
+.gallery-img img{
+  width: fit-content;
+  
 }
