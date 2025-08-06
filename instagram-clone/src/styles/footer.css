@@ -1,11 +1,15 @@
-.instagram-footer-icons{
+/* .instagram-footer-icons{
+    position: absolute;
     height: 50px;
     width: 375px;
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
     padding: 10px;
-}
+    bottom: 0;
+
+} */
 .instagram-footer-icons div{
     height: 100%;
     width: 75px;
