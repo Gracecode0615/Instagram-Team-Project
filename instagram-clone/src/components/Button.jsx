@@ -1,13 +1,13 @@
 import "../styles/button.scss";
 
-const Button = ({ bgc, bradius }) => {
+const Button = ({ bgc, border, text, color }) => {
   return (
     <div>
       <button
         className="signin-signup"
-        style={{ backgroundColor: bgc, borderRadius: bradius }}
+        style={{ backgroundColor: bgc, border: border, color: color }}
       >
-        Log in
+        {text}
       </button>
     </div>
   );

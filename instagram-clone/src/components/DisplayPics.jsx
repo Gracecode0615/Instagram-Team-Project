@@ -1,6 +1,6 @@
 import '../styles/displayPics.scss';
 
-function UserDP({ imgSrc, alt = '', borderColor = 'gray', size = 60 }) {
+function UserDP({ imgSrc, alt = '', borderColor = 'lightgray', size = 60 }) {
   return (
     <div
       className="dp-wrapper"
