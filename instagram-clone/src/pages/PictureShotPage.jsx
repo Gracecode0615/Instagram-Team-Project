@@ -1,9 +1,10 @@
 import "../styles/picture-shot-page.scss"
 import Icons from "../components/Icons"
-import Footer from "../components/Footer"
+// import Footer from "../components/Footer"
 // import Header from "../components/Header"
 import WhiteHeader from "../components/WhiteHeader"
 import SnapShot from "../components/SnapShot"
+import EFooter from "../components/EFooter"
 // import Post from "../components/Post"
 
 const PictureShotPage= () => {
@@ -30,7 +31,7 @@ const PictureShotPage= () => {
 
                 </div>
                 <div className="foot-line">
-                    <Footer />
+                    <EFooter fill={"white"} />
                 </div>
             </div> 
             {/* footer section */}

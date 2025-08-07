@@ -39,18 +39,18 @@ const SnapShot = () => {
 
     return (
         <div className='container'>
-            
+
             <div className="camera-container">
                 <video ref={videoRef} autoPlay className="video" />
-                <button onClick={handleCapture} className="capture-button">Take Picture</button>
-                <canvas ref={canvasRef} style={{ display: 'none' }} width="640" height="480" />
+                <button onClick={handleCapture} className="capture-button"></button>
+                {/* <canvas ref={canvasRef} style={{ display: 'none' }} width="640" height="200" /> */}
             </div>
-            {image && (
-        <div className="image-preview">
-          <h2>Captured Image:</h2>
-          <img src={image} alt="Captured" />
-        </div>
-      )}
+            {/* {image && (
+                <div className="image-preview">
+                    <h2>Captured Image:</h2>
+                    <img src={image} alt="Captured" />
+                </div>
+            )} */}
 
         </div>
     )
@@ -64,18 +64,3 @@ export default SnapShot;
 
 
 
-//   return (
-//     <div className="container">
-//       <h1>Instagram Picture Shot</h1>
-//       <div className="camera-container">
-//         <video ref={videoRef} autoPlay className="video" />
-//         <button onClick={handleCapture} className="capture-button">Take Picture</button>
-//         <canvas ref={canvasRef} style={{ display: 'none' }} width="640" height="480" />
-//       </div>
-//       {image && (
-//         <div className="image-preview">
-//           <h2>Captured Image:</h2>
-//           <img src={image} alt="Captured" />
-//         </div>
-//       )}
-    // </div>
