@@ -1,4 +1,5 @@
 import { FiChevronDown } from "react-icons/fi";
+import React, { useState } from 'react';
 
 import Footer from '../components/Footer';
 import '../styles/InstaAddImage.scss';
@@ -17,6 +18,8 @@ import m6 from '../assets/posts_img/m6.jpg';
 
 function AddImage() {
     const sampleImages = [addimg1, m1, m2, addimg2, addimg3, m3, m4, m5, addimg4, m6, addimg5];
+    const [selectedImage, setSelectedImage] = useState(addimg1);
+    const [selectedImages, setSelectedImages] = useState([addimg1]);
 
     return (
         <div className="add-image-container">
@@ -32,7 +35,7 @@ function AddImage() {
                     </div>
 
                     {/* Image */}
-                    <img className="img-preview" src={addimg1} alt="Preview" />
+                    <img className="img-preview" src={selectedImage} alt="Preview" />
 
                     {/* Bottom Overlay */}
                     <div className="overlay bottom">
@@ -61,7 +64,11 @@ function AddImage() {
                 {/* Image Grid and Footer */}
                 <div className="img-grid">
                     {sampleImages.map((src, index) => (
-                        <img key={index} src={src} alt={`Preview ${index}`} />
+                        <img key={index} src={src} 
+                            alt={`Preview ${index}`} 
+                            onClick={() => setSelectedImage(src)}
+                            className={selectedImage === src ? 'selected' : ''}
+                        />
                     ))}
                 </div>
             </div>
