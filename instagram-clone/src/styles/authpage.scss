@@ -8,6 +8,17 @@
 }
 .live{
     background: #000;
+    width: 100%;
+    max-width: 500px;
+}
+
+.live-image img{
+    width: 375px;
+    height: 667px;
+}
+
+.bar-line{
+    text-align: center;
 }
 .SearchPage{
     width: 100%;

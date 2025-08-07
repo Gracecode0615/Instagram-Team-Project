@@ -3,6 +3,7 @@ import InstagramAuth from "./pages/IstagramAuth";
 import InstagramAuth1 from "./pages/InstagramAuth1";
 import InstagramSearch from "./pages/InstagramSearch.jsx";
 import InstagramMain from './pages/instagram-main.jsx'
+import Iglive from './pages/Iglive.jsx'
 import Profile from './pages/instaProfile.jsx'
 import IGTV from "./pages/IGTV";
 import "./styles/app.scss";
@@ -21,6 +22,7 @@ function App() {
           <Route path="/main" element={<InstagramMain/>} />
           <Route path="/search" element={<InstagramSearch/>}/>
           <Route path="/likes" element={<IgLikes/>}/>
+          <Route path="/live" element={<Iglive/>}/>
           <Route path="/profile" element={<Profile/>} />
           <Route path="/post" element={<PostPage/>} />
           <Route path="/shots" element={<PictureShotPage/>} />
