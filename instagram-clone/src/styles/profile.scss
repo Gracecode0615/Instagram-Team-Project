@@ -1,10 +1,12 @@
 .profile-container{
-        height: 100vh;
-        width: 100%;
-        max-width: 24rem;
-        overflow: auto;
-        display: flex;
-        flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    max-width: 24rem;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fafafa;
 
     .profile-wrap{
         display: flex;
