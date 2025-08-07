@@ -8,6 +8,8 @@ import IGTV from "./pages/IGTV";
 import "./styles/app.scss";
 import { Route, Routes } from 'react-router-dom';
 import IgLikes from "./pages/IgLikes.jsx"
+import PostPage from "./pages/PostPage.jsx";
+import PictureShotPage from "./pages/PictureShotPage.jsx";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path="/search" element={<InstagramSearch/>}/>
           <Route path="/likes" element={<IgLikes/>}/>
           <Route path="/profile" element={<Profile/>} />
+          <Route path="/post" element={<PostPage/>} />
+          <Route path="/shots" element={<PictureShotPage/>} />
           <Route path="/igtv" element={<IGTV/>} /> {/* IGTV route */}
         </Routes>
     </div>

@@ -1,6 +1,6 @@
 import "../styles/header.scss";
 
-const Header = () => {
+const Header = ({bgc}) => {
   const Time = ()=>{
     const now = new Date()
     const exact = {hour:'2-digit', minute:'2-digit', hour12:false}
@@ -17,10 +17,12 @@ const Header = () => {
 
       <div className="item2">
         <svg
+              style={{color:bgc    }}
               width="18"
               height="12"
               viewBox="0 0 18 12"
               fill="none"
+              
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -33,6 +35,7 @@ const Header = () => {
 
 
             <svg
+              style={{color:bgc}}
               width="16"
               height="12"
               viewBox="0 0 16 12"
@@ -48,6 +51,7 @@ const Header = () => {
             </svg>
 
             <svg
+              style={{color:bgc}}
               width="25"
               height="11"
               viewBox="0 0 25 11"
