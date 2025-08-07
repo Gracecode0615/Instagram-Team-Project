@@ -1,9 +1,9 @@
 import "../styles/footer.scss";
 
-const Footer = ({fill="#060606", border="1px solid #dbdbdb"}) => {
+const Footer = ({fill="#060606", border="1px solid #dbdbdb", mtop="30px", height='50px'}) => {
   return (
     <div className="footer"
-        style={{ border: border }}
+        style={{ border: border, marginTop: mtop, height: height }}
     >
       <div className="barline">
         <svg
