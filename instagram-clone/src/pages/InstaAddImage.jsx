@@ -12,7 +12,7 @@ import m6 from '../assets/posts_img/m6.jpg';
 
 
 function AddImage() {
-const sampleImages = [dp1, m1, m2, m3, m4, m5, m6];
+    const sampleImages = [dp1, m1, m2, m3, m4, m5, m6];
 
     return (
         <div className="add-image-container">
