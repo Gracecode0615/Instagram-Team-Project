@@ -1,0 +1,23 @@
+.containers {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    
+    .new-pas {
+        margin-top: 0px;
+        text-align: left;
+        font-weight: bold;
+        margin-left: 1.5rem;
+    }
+}
+
+.likes-containers {
+    width: 100%;
+    height: auto;
+
+}
+
+.btn{
+    border: thin gray;
+}

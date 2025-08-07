@@ -20,7 +20,7 @@ const Icons = () => {
     <div className="icons">
 
       <div >
-        <Link to="/login">
+        <Link to="/main">
         <svg
           width="22"
           height="25"
@@ -57,6 +57,7 @@ const Icons = () => {
       </div>
 
       <div>
+        <Link to="/post">
         <svg
           width="25"
           height="25"
@@ -71,6 +72,7 @@ const Icons = () => {
             fill="#262626"
           />
         </svg>
+        </Link>
       </div>
 
       <div >
