@@ -8,6 +8,7 @@ import MsgIcon from "../components/msg-icon";
 import ShareIcon from "../components/shareIcon";
 import Footer from "../components/Footer";
 import dp1 from '../assets/dp/dp1.png';
+import v_reel1 from '../assets/videos/v_reel1.mp4';
 import ThreeDots from '../components/ThreeDots';
 
 
@@ -15,10 +16,10 @@ function IGTVShow({ videos, title }) {
     const [storyData, setStoryData] = useState([]);
 
     useEffect(() => {
-        const data = [
-            { videos: 'dp5', title: 'Interviews with leading designers of large companies', name: 'amanda_design', views: 37.256, comment: 373 },
+        const videos = [
+            { video: {v_reel1}, title: 'Interviews with leading designers of large companies', name: 'amanda_design', views: 37.256, comment: 373 },
         ];
-        setStoryData(data);
+        setStoryData(videos);
     }, []);
 
 
