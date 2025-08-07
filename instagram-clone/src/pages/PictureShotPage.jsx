@@ -1,14 +1,16 @@
 import "../styles/picture-shot-page.scss"
 import Icons from "../components/Icons"
 import Footer from "../components/Footer"
-import Header from "../components/Header"
+// import Header from "../components/Header"
+import WhiteHeader from "../components/WhiteHeader"
+import SnapShot from "../components/SnapShot"
 // import Post from "../components/Post"
 
 const PictureShotPage= () => {
     return (
         <div className="shot-container">
             <div className="head">
-                <Header bgc={"white"}/>
+                <WhiteHeader/>
                 </div>
             {/* header section  */}
             
@@ -16,10 +18,9 @@ const PictureShotPage= () => {
            
            
             <div className="snap-shot">
-                <p>All Posts</p>
-                {/* <Post/> */}
+                <SnapShot/>
             </div>
-            {/* post section */}
+            {/* snap shot section */}
 
             
             
