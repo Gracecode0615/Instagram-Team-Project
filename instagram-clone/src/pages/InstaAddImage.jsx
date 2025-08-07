@@ -2,7 +2,11 @@ import { FiChevronDown } from "react-icons/fi";
 
 import Footer from '../components/Footer';
 import '../styles/InstaAddImage.scss';
-import dp1 from '../assets/dp/dp1.png';
+import addimg1 from '../assets/dp/addimg1.png';
+import addimg2 from '../assets/dp/addimg2.png';
+import addimg3 from '../assets/dp/addimg3.png';
+import addimg4 from '../assets/dp/addimg4.png';
+import addimg5 from '../assets/dp/addimg5.png';
 import m1 from '../assets/posts_img/m1.png';
 import m2 from '../assets/posts_img/m2.png';
 import m3 from '../assets/posts_img/m3.png';
@@ -12,7 +16,7 @@ import m6 from '../assets/posts_img/m6.jpg';
 
 
 function AddImage() {
-    const sampleImages = [dp1, m1, m2, m3, m4, m5, m6];
+    const sampleImages = [addimg1, m1, m2, addimg2, addimg3, m3, m4, m5, addimg4, m6, addimg5];
 
     return (
         <div className="add-image-container">
@@ -28,7 +32,7 @@ function AddImage() {
                     </div>
 
                     {/* Image */}
-                    <img className="img-preview" src={dp1} alt="Preview" />
+                    <img className="img-preview" src={addimg1} alt="Preview" />
 
                     {/* Bottom Overlay */}
                     <div className="overlay bottom">
