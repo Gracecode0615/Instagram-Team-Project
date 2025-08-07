@@ -1,164 +1,196 @@
 .igtv-page {
     height: 100vh;
-    padding: 1rem;
-    overflow: auto;
+    width: 24rem;
+    overflow: hidden;
     position: relative;
     background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    .igtv-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding: 16px;
-        color: #dbdbdb;
+    .igtv-video-wrapper {
+        position: relative;
+        height: 90vh;
+        width: 100%;
 
-        .igtv-header-left {
+        .igtv-header,
+        .igtv-footer {
+            position: absolute;
+            left: 0;
+            width: 96%;
+            padding: 1rem;
+            z-index: 2;
+            color: #dbdbdb;
+            background: transparent;
+        }
+        .igtv-header {
+            top: 0;
             display: flex;
-            flex-direction: column;
-            gap: 10px;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 16px;
+            color: #dbdbdb;
 
-            h2 {
-                margin: 0;
-                font-size: 20px;
-                font-weight: 600;
-                word-wrap: break-word;
-                overflow-wrap: break-word;
-                white-space: normal;
-                max-width: 310px;
-            }
-
-            .igtv-user-info {
+            .igtv-header-left {
                 display: flex;
-                align-items: center;
+                flex-direction: column;
                 gap: 10px;
 
-                .igtv-user-avatar {
-                    width: 32px;
-                    height: 32px;
-                    border-radius: 50%;
-                    overflow: hidden;
-
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                    }
+                h2 {
+                    margin: 0;
+                    font-size: 20px;
+                    font-weight: 600;
+                    word-wrap: break-word;
+                    overflow-wrap: break-word;
+                    white-space: normal;
+                    max-width: 310px;
                 }
 
-                .igtv-user-meta {
+                .igtv-user-info {
                     display: flex;
-                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
 
-                    .igtv-username {
-                        font-weight: 500;
-                        font-size: 14px;
+                    .igtv-user-avatar {
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 50%;
+                        overflow: hidden;
 
-                        .follow {
-                            font-weight: 600;
-                            margin-left: 4px;
-                            cursor: pointer;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
                         }
                     }
 
-                    .igtv-date {
-                        font-size: 12px;
+                    .igtv-user-meta {
+                        display: flex;
+                        flex-direction: column;
+
+                        .igtv-username {
+                            font-weight: 500;
+                            font-size: 14px;
+
+                            .follow {
+                                font-weight: 600;
+                                margin-left: 4px;
+                                cursor: pointer;
+                            }
+                        }
+
+                        .igtv-date {
+                            font-size: 12px;
+                        }
                     }
                 }
             }
+
+            .igtv-header-close {
+                font-size: 20px;
+                font-weight: bold;
+                cursor: pointer;
+                padding: 0 8px;
+            }
         }
 
-        .igtv-header-close {
-            font-size: 20px;
-            font-weight: bold;
-            cursor: pointer;
-            padding: 0 8px;
-        }
-    }
-
-    .igtv-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-        gap: 1rem;
-
-        .igtv-card {
-        display: flex;
-        flex-direction: column;
-
-        .igtv-thumbnail {
+        .igtv-grid {
+            flex: 1;
+            padding: 0;
+            overflow-y: auto;
             width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 8px;
-            background-color: #000;
+            height: 100%;
+
+            .igtv-card {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+
+                video {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                .igtv-thumbnail {
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                    border-radius: 8px;
+                    background-color: #000;
+                }
+
+                .igtv-title {
+                    margin-top: 0.5rem;
+                    font-size: 0.9rem;
+                    font-weight: 500;
+                    color: #333;
+                }
+            }
+
+            .no-videos {
+                grid-column: 1 / -1;
+                text-align: center;
+                color: gray;
+            }
         }
 
-        .igtv-title {
-            margin-top: 0.5rem;
+        .igtv-footer {
+            bottom: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            margin-top: 1rem;
+            left: 0;
+            width: 90%;
+            padding: 1rem;
+            color: #dbdbdb;
+        }
+
+        .igtv-footer-stats {
+            color: #dbdbdb;
+        }
+        svg{
+            color: #dbdbdb;
+            fill: #dbdbdb;
+        }
+
+        .igtv-stats-text {
             font-size: 0.9rem;
-            font-weight: 500;
-            color: #333;
-        }
+            margin-bottom: 1rem;
         }
 
-        .no-videos {
-        grid-column: 1 / -1;
-        text-align: center;
-        color: gray;
+        .igtv-icons {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            cursor: pointer;
         }
-    }
 
-    .igtv-footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 0;
-        margin-top: 1rem;
-        left: 0;
-        width: 90%;
-        padding: 1rem;
-        color: #dbdbdb;
-    }
-
-    .igtv-footer-stats {
-        color: #dbdbdb;
-        svg{fill: #dbdbdb;}
-    }
-
-    .igtv-stats-text {
-        font-size: 0.9rem;
-        margin-bottom: 1rem;
-    }
-
-    .igtv-icons {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        cursor: pointer;
-    }
-
-    .igtv-footer-button {
-        display: flex;
-        align-items: center;
-        gap: 0.7rem;
-        border: solid 1px #dbdbdb;
-        padding: .05rem .2rem;
-        border-radius: .3rem;
-        span{
-            display: inline-block;
-            font-size: 1rem;
+        .igtv-footer-button {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            border: solid 1px #dbdbdb;
+            padding: .05rem .2rem;
+            border-radius: .3rem;
+            span{
+                display: inline-block;
+                font-size: 1rem;
+            }
         }
-    }
 
-    .up-next-button {
-        background: none;
-        border: none;
-        font-size: 0.9rem;
-        cursor: pointer;
-        padding: 0.5rem;
-        color: #dbdbdb;
+        .up-next-button {
+            background: none;
+            border: none;
+            font-size: 0.9rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            color: #dbdbdb;
+        }
+
     }
 
 }
