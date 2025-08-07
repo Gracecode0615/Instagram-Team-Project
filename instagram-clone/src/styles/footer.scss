@@ -1,20 +1,27 @@
-// @media screen and (max-width: 700px) {
+
 .footer-container{
+  position: relative;
+  width: 100%;
     display: flex;
+    justify-content: center;
+    // background: red;
+    text-align: center;
     flex-direction: column;
-    height: 100px;       
+    height: 100px; 
 }
 .instagram-footer-icons {
+  width: 100%;
   display: flex;
+  text-align: center;
   justify-content: space-between;
   align-items: center;
-  padding: 8px;
+  padding: 8px 20px;
   background-color: #fff;
   position: sticky;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 50px;
+  height:auto;
   width: 375px;
   z-index: 10;
 
@@ -47,4 +54,3 @@
     align-items: last baseline;
     justify-content: center;
 }
-//}

@@ -1,0 +1,24 @@
+.catergory-tab{
+    // background:yellow;
+    display: flex;
+    gap: 20px;
+
+    .catergory-item{
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        height: auto;
+        width: fit-content;
+        border: 1px solid #eee;
+        background: #fff;
+        margin-bottom: 20px;
+
+        img{
+            width: 13px;
+            height:15px;
+        }
+    }
+    
+
+}
